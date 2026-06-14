@@ -97,9 +97,9 @@ const HeroSection = () => {
             className="mt-12 sm:mt-16 grid grid-cols-3 gap-6 sm:gap-10 max-w-md"
           >
             {[
-              { value: "500+", label: "Students Helped" },
-              { value: "50+", label: "Expert Tutors" },
-              { value: "95%", label: "Pass Rate" },
+              { value: "2000+", label: "Students Helped" },
+              { value: "30+", label: "Expert Tutors" },
+              { value: "60%", label: "Grade Improvement" },
             ].map((stat) => (
               <div key={stat.label} className="text-center sm:text-left">
                 <div className="text-2xl sm:text-3xl font-heading font-bold text-gradient-gold">
