@@ -8,42 +8,50 @@
   :root {
     /* Blue Education Theme */
     --background: 210 40% 99%;
-    --foreground: 222 47% 11%;
+    --foreground: 222 60% 10%;
 
-    --card: 214 70% 96%;
-    --card-foreground: 222 47% 11%;
+    --card: 210 20% 98%;
+    --card-foreground: 222 60% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 222 60% 10%;
 
-    --primary: 221 83% 53%;
+    /* Primary = deep navy (footer, dark UI elements) */
+    --primary: 222 65% 17%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 214 60% 94%;
-    --secondary-foreground: 222 47% 15%;
+    --secondary: 214 55% 93%;
+    --secondary-foreground: 222 60% 15%;
 
-    --muted: 214 40% 95%;
-    --muted-foreground: 220 14% 40%;
+    --muted: 214 35% 94%;
+    --muted-foreground: 220 16% 42%;
 
-    --accent: 221 83% 53%;
+    /* Accent = vibrant bright blue (CTA buttons, highlights) */
+    --accent: 211 100% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214 32% 88%;
-    --input: 214 32% 88%;
-    --ring: 221 83% 53%;
+    --border: 214 30% 87%;
+    --input: 214 30% 87%;
+    --ring: 211 100% 50%;
 
     --radius: 0.75rem;
 
-    /* Custom tokens (remapped to blue palette for compatibility) */
-    --gold: 221 83% 53%;
-    --gold-light: 213 94% 68%;
-    --gold-dark: 224 76% 45%;
-    --navy: 221 83% 53%;
-    --navy-light: 213 94% 68%;
-    --navy-dark: 224 76% 33%;
+    /* Navy tokens — deep dark blues for section backgrounds & gradients */
+    --navy: 222 65% 17%;
+    --navy-light: 221 55% 26%;
+    --navy-dark: 222 72% 10%;
+
+    /* "Gold" tokens repurposed as the bright-blue highlight range:
+       -dark  = medium blue, readable on white backgrounds
+       -base  = vibrant blue
+       -light = sky blue, readable on dark navy backgrounds          */
+    --gold: 211 100% 50%;
+    --gold-light: 207 100% 68%;
+    --gold-dark: 213 90% 40%;
+
     --warm-white: 210 40% 99%;
     --warm-gray: 220 14% 46%;
 
@@ -58,33 +66,33 @@
   }
 
   .dark {
-    --background: 220 30% 6%;
+    --background: 222 55% 6%;
     --foreground: 210 20% 95%;
-    --card: 220 30% 10%;
+    --card: 222 50% 10%;
     --card-foreground: 210 20% 95%;
-    --popover: 220 30% 10%;
+    --popover: 222 50% 10%;
     --popover-foreground: 210 20% 95%;
-    --primary: 42 92% 56%;
-    --primary-foreground: 220 60% 12%;
-    --secondary: 220 25% 16%;
+    --primary: 222 65% 17%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 40% 16%;
     --secondary-foreground: 210 20% 95%;
-    --muted: 220 20% 16%;
-    --muted-foreground: 215 15% 60%;
-    --accent: 42 92% 56%;
-    --accent-foreground: 220 60% 12%;
+    --muted: 222 35% 16%;
+    --muted-foreground: 215 20% 60%;
+    --accent: 211 100% 55%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 220 20% 18%;
-    --input: 220 20% 18%;
-    --ring: 42 92% 56%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 222 30% 18%;
+    --input: 222 30% 18%;
+    --ring: 211 100% 55%;
+    --sidebar-background: 222 55% 8%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 211 100% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 222 40% 14%;
+    --sidebar-accent-foreground: 210 20% 90%;
+    --sidebar-border: 222 30% 16%;
+    --sidebar-ring: 211 100% 55%;
   }
 }
 
