@@ -14,7 +14,10 @@ const HeroSection = () => {
           src={heroImage}
           alt="Students learning together"
           className="w-full h-full object-cover"
+          fetchPriority="high"
         />
+        {/* Dark navy overlay for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-dark/90 via-navy/80 to-navy-light/70" />
       </div>
 
       {/* Decorative elements */}
