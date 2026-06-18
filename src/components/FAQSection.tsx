@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "How do I sign up for tutoring?",
     answer:
-      "To register, send a WhatsApp text to 078 710 2557. Provide the following information: Name of parent, name of student, contact number of parent and student, email addresses, subject(s), and grade.",
+      "To register please make use of the booking portal and register as a student with all relevant information.",
   },
   {
     question: "Which curriculum do you follow?",
@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "What subjects do you offer?",
     answer:
-      "We offer Mathematics, Advanced Mathematics, Physical Science, Computer Applications Technology (CAT), English, Academic Writing & Research, and Physics for university students (including group lessons for UCT engineering students).",
+      "We offer Mathematics, Advanced Mathematics, Physical Science, Computer Applications Technology (CAT), English, Academic Writing & Research, and Physics.",
   },
   {
     question: "Who are the tutors?",
