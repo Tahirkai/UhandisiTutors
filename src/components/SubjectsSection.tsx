@@ -13,14 +13,8 @@ import {
 const subjects = [
   {
     icon: Calculator,
-    name: "Mathematics",
+    name: "Mathematics & Advanced Mathematics",
     description: "Algebra, Calculus, Statistics & more",
-    levels: "Grade 8–12, University",
-  },
-  {
-    icon: Calculator,
-    name: "Advanced Mathematics",
-    description: "Advanced mathematics tutoring covering algebra, calculus, geometry, and more",
     levels: "Grade 8–12, University",
   },
   {
