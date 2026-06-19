@@ -101,38 +101,68 @@ const FAQSection = () => {
           </p>
         </motion.div>
 
-        {/* FAQ Accordion */}
+        {/* FAQ Accordion — Two Columns */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="max-w-3xl mx-auto"
+          className="max-w-6xl mx-auto"
         >
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <motion.div
-                key={faq.question}
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.4, delay: 0.1 + index * 0.05 }}
-              >
-                <AccordionItem
-                  value={`item-${index}`}
-                  className="bg-card rounded-xl border border-border overflow-hidden data-[state=open]:border-accent/50 transition-colors"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-start">
+            {/* Left Column */}
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.slice(0, 6).map((faq, index) => (
+                <motion.div
+                  key={faq.question}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.4, delay: 0.1 + index * 0.05 }}
                 >
-                  <AccordionTrigger className="px-6 py-5 text-left text-sm sm:text-base font-semibold font-heading text-foreground hover:no-underline hover:bg-secondary/50 transition-colors [&[data-state=open]>svg]:rotate-180">
-                    <span className="flex items-center gap-3">
-                      <HelpCircle className="w-5 h-5 text-gold-dark flex-shrink-0" />
-                      {faq.question}
-                    </span>
-                  </AccordionTrigger>
-                  <AccordionContent className="px-6 pb-5 text-sm sm:text-base text-muted-foreground leading-relaxed">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
-              </motion.div>
-            ))}
-          </Accordion>
+                  <AccordionItem
+                    value={`item-${index}`}
+                    className="bg-card rounded-xl border border-border overflow-hidden data-[state=open]:border-accent/50 transition-colors"
+                  >
+                    <AccordionTrigger className="px-6 py-5 text-left text-sm sm:text-base font-semibold font-heading text-foreground hover:no-underline hover:bg-secondary/50 transition-colors [&[data-state=open]>svg]:rotate-180">
+                      <span className="flex items-center gap-3">
+                        <HelpCircle className="w-5 h-5 text-gold-dark flex-shrink-0" />
+                        {faq.question}
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-6 pb-5 text-sm sm:text-base text-muted-foreground leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </motion.div>
+              ))}
+            </Accordion>
+
+            {/* Right Column */}
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.slice(6).map((faq, index) => (
+                <motion.div
+                  key={faq.question}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.4, delay: 0.1 + (index + 6) * 0.05 }}
+                >
+                  <AccordionItem
+                    value={`item-${index + 6}`}
+                    className="bg-card rounded-xl border border-border overflow-hidden data-[state=open]:border-accent/50 transition-colors"
+                  >
+                    <AccordionTrigger className="px-6 py-5 text-left text-sm sm:text-base font-semibold font-heading text-foreground hover:no-underline hover:bg-secondary/50 transition-colors [&[data-state=open]>svg]:rotate-180">
+                      <span className="flex items-center gap-3">
+                        <HelpCircle className="w-5 h-5 text-gold-dark flex-shrink-0" />
+                        {faq.question}
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-6 pb-5 text-sm sm:text-base text-muted-foreground leading-relaxed">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </motion.div>
+              ))}
+            </Accordion>
+          </div>
         </motion.div>
       </div>
     </section>
