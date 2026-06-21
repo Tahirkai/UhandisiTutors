@@ -2,12 +2,11 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import {
   Calculator,
-  Atom,
   Cog,
   FlaskConical,
-  Binary,
-  TrendingUp,
   BookOpen,
+  FileText,
+  Microscope,
 } from "lucide-react";
 
 const subjects = [
@@ -18,7 +17,7 @@ const subjects = [
     levels: "Grade 8–12, University",
   },
   {
-    icon: FlaskConical,
+    icon: Microscope,
     name: "Physical Science",
     description: "Physics and Chemistry tutoring for high school students",
     levels: "Grade 8–12, University",
@@ -35,7 +34,7 @@ const subjects = [
     description: "Language arts, essay writing, and life skills support",
     levels: "Grade 8–12, University",
   },
-  {icon: BookOpen,
+  {icon: FileText,
     name: "Academic Writing & Research",
     description: "Academic writing, research guidance, and exam preparation",
     levels: "University",
