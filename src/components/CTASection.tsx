@@ -10,7 +10,7 @@ const CTASection = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-20 sm:py-28 bg-navy-gradient relative overflow-hidden">
+    <section className="py-20 sm:py-28 bg-warm relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 relative" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
