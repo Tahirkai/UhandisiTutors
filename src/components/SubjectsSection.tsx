@@ -41,7 +41,7 @@ const subjects = [
   },
   {
     icon: FlaskConical,
-    name: "Physics (PHY1012/PHY1014F) - Group lessons",
+    name: "Physics - Group lessons",
     description: "F1st year physics designed for UCT engineering students. The lessons run in group setting.",
     levels: "University",
   },
