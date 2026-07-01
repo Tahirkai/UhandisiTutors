@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Which curriculum do you follow?",
     answer:
-      "We follow the South African CAPS curriculum. However, students who follow the IEB curriculum do benefit a lot from our lessons because the content is fairly similar.",
+      "Our Lessons are algined with the South African CAPS curriculum. Students following the IEB curriculum also benefit significantly as the core content is very similar.",
   },
   {
     question: "Do you offer online lessons?",
@@ -25,33 +25,19 @@ const faqs = [
       "We offer both online and face-to-face lessons. Online lessons are a great option for students based outside of Cape Town. Face-to-face lessons are only available to Cape Town clients and are held at the University of Cape Town, Upper Campus.",
   },
   {
-    question: "Is the tutoring limited to group lessons?",
-    answer:
-      "No, we offer both group lessons and one-on-one lessons. You can choose the format that works best for your learning style and schedule.",
-  },
-  {
-    question: "What subjects do you offer?",
-    answer:
-      "We offer Mathematics, Advanced Mathematics, Physical Science, Computer Applications Technology (CAT), English, Academic Writing & Research, and Physics.",
-  },
-  {
     question: "Who are the tutors?",
     answer:
-      "Uhandisi tutors are all STEM graduates from the University of Cape Town with vast experience in their academic subjects. The majority of the tutors are from the engineering faculty.",
-  },
-  {
-    question: "If I have questions or concerns, whom do I contact?",
-    answer: "Contact the manager (Matome) on 078 710 2557 for any questions or concerns.",
+      "Our tutors are STEM graduates from the University of Cape Town, most from the Engineerin faculty, with strong academic backgroundsand tutoring experience.",
   },
   {
     question: "How do you track progress?",
     answer:
-      "We assess students every 5–6 weeks and return feedback directly to parents, keeping you informed of your child's academic growth.",
+      "We conduct informal assessments every 4-5 weeks and provide detailed feedback directly to parents",
   },
   {
     question: "What happens if I miss a lesson?",
     answer:
-      "All lessons are recorded and posted on the website and possibly on Google Drive. Students who miss a class can retrieve and watch the recording as many times as they wish to avoid falling behind.",
+      "All lessons are recorded and posted on the website and possibly on Google Drive. Students who miss a class can retrieve and watch the recording as many times as they wish to avoid falling behind. In-person sessions are not recorded.",
   },
   {
     question: "When are the lessons held?",
@@ -60,7 +46,11 @@ const faqs = [
   },
   {
     question: "Which payment methods do you accept?",
-    answer: "We prefer EFT and direct deposit payments.",
+    answer: "We only accept EFT and direct deposit payments.",
+  },
+   {
+    question: "Who should I contact for questions or concerns?",
+    answer: "Contact the manager (Matome) on 078 710 2557 for any questions or concerns.",
   },
 ];
 
