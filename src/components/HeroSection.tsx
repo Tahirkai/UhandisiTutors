@@ -134,10 +134,10 @@ const HeroSection = () => {
                 variant="outline"
                 className="border-2 border-white text-white bg-white/10 backdrop-blur-sm hover:bg-white hover:text-primary font-semibold text-base px-8 py-6 transition-all"
                 onClick={() =>
-                  document.querySelector("#how-it-works")?.scrollIntoView({ behavior: "smooth" })
+                  document.querySelector("#subjects")?.scrollIntoView({ behavior: "smooth" })
                 }
               >
-                Learn More
+                Explore Subjects
               </Button>
             </motion.div>
           </div>
