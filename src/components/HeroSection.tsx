@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Star, Users, TrendingUp, Award, BookOpen, Clock, Shield, Lightbulb } from "lucide-react";
+import { ArrowRight, Star, Users, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-students.jpg";
 
@@ -23,39 +23,6 @@ const stats = [
     value: "60%",
     label: "Grade Improvement",
     description: "Average grade improvement achieved by our students.",
-  },
-];
-
-const whyChooseUs = [
-  {
-    icon: BookOpen,
-    title: "Personalised Tutoring",
-    description: "One-on-one learning plans tailored to each student's unique goals.",
-  },
-  {
-    icon: Award,
-    title: "Expert Tutors",
-    description: "Highly qualified tutors with deep subject knowledge and proven expertise.",
-  },
-  {
-    icon: Clock,
-    title: "Flexible Sessions",
-    description: "Choose online or in-person sessions that fit your schedule and learning style.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Proven Results",
-    description: "Trackable progress and measurable improvement in every student.",
-  },
-  {
-    icon: Shield,
-    title: "Safe & Supportive",
-    description: "A welcoming environment that builds confidence and inspires growth.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Holistic Learning",
-    description: "Beyond academics—building critical thinking, confidence, and a love for learning.",
   },
 ];
 
@@ -142,76 +109,43 @@ const HeroSection = () => {
             </motion.div>
           </div>
 
-          {/* Right column: Stats + Why Choose Us panel */}
+          {/* Right column: Stats panel */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.35 }}
-            className="w-full lg:w-[52%] xl:w-[50%] shrink-0"
+            className="w-full lg:w-[55%] xl:w-[52%] shrink-0"
           >
-            <div className="rounded-2xl border border-white/10 bg-navy-dark/60 backdrop-blur-md p-5 sm:p-6 shadow-2xl">
+            <div className="grid grid-cols-3 gap-4">
+              {stats.map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.55, delay: 0.45 + i * 0.1 }}
+                  className="rounded-2xl border border-white/15 bg-navy-dark/55 backdrop-blur-md p-6 sm:p-8 flex flex-col items-center text-center gap-4"
+                >
+                  {/* Icon */}
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-accent flex items-center justify-center shadow-lg shadow-accent/30">
+                    <stat.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
+                  </div>
 
-              {/* Stats row */}
-              <div className="grid grid-cols-3 gap-3 mb-5">
-                {stats.map((stat, i) => (
-                  <motion.div
-                    key={stat.label}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.45 + i * 0.08 }}
-                    className="rounded-xl bg-white/5 border border-white/10 p-3 sm:p-4 flex flex-col gap-2"
-                  >
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center shrink-0">
-                        <stat.icon className="w-4 h-4 text-accent" />
-                      </div>
-                      <span className="text-xl sm:text-2xl font-heading font-bold text-white leading-none">
-                        {stat.value}
-                      </span>
-                    </div>
-                    <p className="text-[11px] sm:text-xs font-semibold text-gold-light leading-tight">
-                      {stat.label}
-                    </p>
-                    <p className="text-[10px] sm:text-[11px] text-white/50 leading-snug hidden sm:block">
-                      {stat.description}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
+                  {/* Value */}
+                  <span className="text-3xl sm:text-4xl font-heading font-bold text-white leading-none">
+                    {stat.value}
+                  </span>
 
-              {/* Why Choose Us heading */}
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4, delay: 0.7 }}
-                className="text-sm font-semibold text-white/80 mb-3"
-              >
-                Why Choose Us
-              </motion.p>
+                  {/* Label */}
+                  <p className="text-sm sm:text-base font-semibold text-white leading-tight">
+                    {stat.label}
+                  </p>
 
-              {/* Features grid */}
-              <div className="grid grid-cols-3 gap-3">
-                {whyChooseUs.map((item, i) => (
-                  <motion.div
-                    key={item.title}
-                    initial={{ opacity: 0, y: 16 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.45, delay: 0.75 + i * 0.07 }}
-                    className="rounded-xl bg-white/5 border border-white/10 p-3 sm:p-4 hover:bg-white/10 transition-colors"
-                  >
-                    <div className="w-7 h-7 rounded-lg bg-accent/20 flex items-center justify-center mb-2">
-                      <item.icon className="w-3.5 h-3.5 text-accent" />
-                    </div>
-                    <p className="text-xs font-semibold text-white leading-tight mb-1">
-                      {item.title}
-                    </p>
-                    <p className="text-[10px] sm:text-[11px] text-white/50 leading-snug hidden sm:block">
-                      {item.description}
-                    </p>
-                  </motion.div>
-                ))}
-              </div>
-
+                  {/* Description */}
+                  <p className="text-xs sm:text-sm text-white/55 leading-relaxed">
+                    {stat.description}
+                  </p>
+                </motion.div>
+              ))}
             </div>
           </motion.div>
 
