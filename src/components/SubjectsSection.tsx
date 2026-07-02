@@ -42,7 +42,7 @@ const subjects = [
   {
     icon: FlaskConical,
     name: "Physics - Group lessons",
-    description: "Fist year physics designed for UCT engineering students. The lessons run in group setting.",
+    description: "First year physics designed for UCT engineering students. The lessons run in group setting.",
     levels: "University",
   },
 ];
