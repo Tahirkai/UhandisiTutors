@@ -101,7 +101,7 @@ const FAQSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-start">
             {/* Left Column */}
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.slice(0, 6).map((faq, index) => (
+              {faqs.slice(0, 5).map((faq, index) => (
                 <motion.div
                   key={faq.question}
                   initial={{ opacity: 0, y: 20 }}
@@ -128,7 +128,7 @@ const FAQSection = () => {
 
             {/* Right Column */}
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.slice(6).map((faq, index) => (
+              {faqs.slice(5).map((faq, index) => (
                 <motion.div
                   key={faq.question}
                   initial={{ opacity: 0, y: 20 }}
