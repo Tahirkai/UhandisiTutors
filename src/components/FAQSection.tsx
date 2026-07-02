@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Which curriculum do you follow?",
     answer:
-      "Our Lessons are algined with the South African CAPS curriculum. Students following the IEB curriculum also benefit significantly as the core content is very similar.",
+      "Our Lessons are aligned with the South African CAPS curriculum. Students following the IEB curriculum also benefit significantly as the core content is very similar.",
   },
   {
     question: "Do you offer online lessons?",
@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Who are the tutors?",
     answer:
-      "Our tutors are STEM graduates from the University of Cape Town, most from the Engineerin faculty, with strong academic backgroundsand tutoring experience.",
+      "Our tutors are STEM graduates from the University of Cape Town, most from the Engineering faculty, with strong academic backgrounds and tutoring experience.",
   },
   {
     question: "How do you track progress?",
